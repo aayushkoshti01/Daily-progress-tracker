@@ -26,6 +26,16 @@ st.set_page_config(
 # Authentication check
 if not show_auth_page():
     st.stop()
+    st.markdown(
+    """
+    <div style="text-align: center;">
+        <p style="color: gray; margin-top: 2px;">
+            Made by Aayush Koshti
+        </p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Update task completion
 def update_task(task_id, selected_date, widget_key):
@@ -374,11 +384,49 @@ st.bar_chart(
 st.divider()
 
 st.caption("Daily Progress Tracker | Keep moving forward!")
+# Bottom AK Branding
 st.markdown(
     """
-    <hr>
-    <div style="text-align: center; color: gray; padding: 15px;">
-        Website made by <b>Aayush Koshti</b>
+    <style>
+    .ak-footer {
+        text-align: center;
+        padding: 35px 10px 15px 10px;
+        margin-top: 45px;
+        border-top: 1px solid rgba(128, 128, 128, 0.25);
+    }
+
+    .ak-footer-logo {
+        font-size: 30px;
+        font-weight: 800;
+        letter-spacing: 3px;
+        color: #777777;
+    }
+
+    .ak-footer-text {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: #888888;
+        margin-top: 5px;
+    }
+
+    .ak-footer-small {
+        font-size: 11px;
+        color: #999999;
+        margin-top: 12px;
+    }
+    </style>
+
+    <div class="ak-footer">
+        <div class="ak-footer-logo">AK</div>
+
+        <div class="ak-footer-text">
+            MADE BY AAYUSH KOSHTI
+        </div>
+
+        <div class="ak-footer-small">
+            Daily Progress Tracker · © 2026
+        </div>
     </div>
     """,
     unsafe_allow_html=True
