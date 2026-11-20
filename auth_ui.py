@@ -5,6 +5,30 @@ from database.auth import sign_up, sign_in, sign_out, is_logged_in
 
 def show_auth_page():
 
+    # AK Branding
+    st.markdown(
+        """
+        <div style="text-align: center; padding: 20px 0 10px 0;">
+            <div style="
+                font-size: 42px;
+                font-weight: 800;
+                letter-spacing: 4px;
+                color: #4F8BF9;
+            ">
+                AK
+            </div>
+            <div style="
+                font-size: 14px;
+                color: gray;
+                margin-top: -5px;
+            ">
+                Made by Aayush Koshti
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
     st.title("Daily Progress Tracker")
     st.subheader("Welcome! Please log in or create an account.")
 
