@@ -19,7 +19,7 @@ def show_auth_page():
             </div>
             <div style="
                 font-size: 14px;
-                color: gray;
+                color: beige;
                 margin-top: -5px;
             ">
                 Made by Aayush Koshti
